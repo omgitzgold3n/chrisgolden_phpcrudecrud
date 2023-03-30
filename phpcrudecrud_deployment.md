@@ -69,7 +69,9 @@ Now we need to install PHP.
 Type these commands seperately in the terminal. 
 
 sudo apt install php
+=
 sudo apt install libapache2-mod-php
+=
 sudo apt install php-cli
 sudo apt install php-mysql
 sudo apt install php-pgsql
