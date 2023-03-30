@@ -14,11 +14,12 @@ ___________
 Section 3:
 
 Specifications for Virtual Machine:
------------------------------------
+- - - - - - - - - - - - - - - - - -
 Disk: 20GB	| CPU: 1  |	RAM: 2048
------------------------------------
+- - - - - - - - - - - - - - - - - -
 ___________
 Section 4:
+
 How to Create a VirtualBox Virtual Machine
 If you haven’t already installed the Ubuntu 20.04 Operating System on your machine, 
 skip to section 5 and then come back here to install a virtual machine.
@@ -39,7 +40,7 @@ This will bring you through a bunch of questions; fill them out with the informa
 as it will allow you to connect to this server via ssh. Otherwise, you wouldn't be able to use a fancy terminal that is much easier than the Ubunutu server interface. 
 
 Once finished, restart the server and it should prop up a log in and password, then you can begin to use the server. Use a seperate terminal to ssh into your server with it's ip. Using the server and typing "ip addr" will show you the enp0s8 with an ip address. Use this to ssh into the server.
-__________
+___________
 Section 5:
 
 Installing the Ubuntu 20.04 Operating System 
@@ -50,13 +51,21 @@ operating system.
 When it the file finishes downloading, run the file. 
 Once the software is installed, you can add a virtual machine to begin creating local servers. 
 
-__________
+___________
 Section 6:
 
+
+___________
 Section 7:
 
+
+___________
 Section 8:
 
+
+___________
 Section 9:
 
+
+___________
 Section 10:
