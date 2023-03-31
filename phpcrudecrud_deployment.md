@@ -30,7 +30,7 @@ Disk: 20GB	| CPU: 1  |	RAM: 2048
 ```
 
 ___________
-__*Section 4 Create a Virutal Machine*__
+__*Section 4 - Create a Virutal Machine*__
 
 How to Create a VirtualBox Virtual Machine
 If you haven’t already installed the Ubuntu 20.04 Operating System on your machine, 
