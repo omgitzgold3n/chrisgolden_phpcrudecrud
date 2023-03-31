@@ -164,8 +164,43 @@ the directory name before the file with a / and this should work then.
 
 ___________
 __*Section 9 - Deploy PHP Crude Crud Application*__
+Once you have created the PHP application, you can now deploy it to an existing cloud server.
+You want to make sure you download this key, and move it into your .ssh files on your local user. 
+ This filename looks like this below, and can be found at https://canvas.umn.edu/courses/349316/assignments/3118287.
+```
+INET4031_Spring_2023.pem
+```
+Then you want to make a zip file of your php application on your server;
+```
+tar -zcvf <your name>_phpcrudecrud.tar.gz phpcrudecrudapp/
+```
+Now, on your local machine terminal, you want to move the application using the .ssh key provided to us.
+Type in this following command using your information:
+```
+$ scp -i .ssh INET4031_Spring_2023.pem <yourname>_phpcrudecrud.tar.gz ubuntu@18.119.121.213:.
+```
+This sends your zipped php directory to the server, and then you can ssh into this server by typing this:
+```
+$ ssh -i .ssh/INET4031_Spring_2023.pem ubuntu@18.119.121.213
+```
+Now, you can extract the zip file, and move the contents into a directory by naming it <yourname>_phpcrudecrud:
+```
+$ tar -xvf <yourname>_phpcrudecrud.tar.gz
+```
+Now we need to move the "phpcrudecrudapp" you created in ther server by doing the following:
+```
+ubuntu@ip-172-31-3-146:~$ mv phpcrudecrudapp/ <your name>_phpcrudecrud
+```
+Then, we must move our application to the /var/www/html directory so we can view it on the browser. In the 
+ubuntu server directory, type this command:
+```
+$ sudo cp -R <yourname>_phpcrudecrudapp/ /var/www/html
+```
+cd into the /var/www/html directory and make sure your application is located in there. 
 
-
+Now you will be able to see your php crude crud application by typing in your browser: http://18.119.121.213/<your name>_phpcrudecrudapp
+If you don't see it, you didn't follow a step correctly. 
+ 
 ___________
 __*Section 10 - Suggested Tests*__
  
