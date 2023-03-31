@@ -9,7 +9,7 @@ may be looking for when searching for employees, as well as add new employees to
 that can be stored and viewed in the MySQL database or displayed as an HTML table. 
 
 ___________
-*Section 2*
+__*Section 2*__
 
 The PHP Crude Crud Deployment involves several steps to set up and configure so that you are able 
 to create functional websites that can be accessed on your machine via a virutal machine server. 
@@ -22,7 +22,7 @@ Crud Application using it's ip address and file location on the server in your w
 
 
 ___________
-*Section 3*
+__*Section 3*__
 
 Specifications for Virtual Machine:
 ```
@@ -30,7 +30,7 @@ Disk: 20GB	| CPU: 1  |	RAM: 2048
 ```
 
 ___________
-*Section 4*
+__*Section 4*__
 
 How to Create a VirtualBox Virtual Machine
 If you haven’t already installed the Ubuntu 20.04 Operating System on your machine, 
@@ -53,7 +53,7 @@ as it will allow you to connect to this server via ssh. Otherwise, you wouldn't 
 
 Once finished, restart the server and it should prop up a log in and password, then you can begin to use the server. Use a seperate terminal to ssh into your server with it's ip. Using the server and typing "ip addr" will show you the enp0s8 with an ip address. Use this to ssh into the server.
 ___________
-*Section 5*
+__*Section 5*__
 
 Installing the Ubuntu 20.04 Operating System 
 Navigate to [Oracle VM VirtualBox](https://www.virtualbox.org/) and download the
@@ -69,7 +69,7 @@ $sudo apt update
 $sudo apt upgrade
 ```
 ___________
-*Section 6*
+__*Section 6*__
 
 Now we need to set up Apache so that we can run functioning websites. 
 Type this command to install Apache 2:
@@ -107,7 +107,7 @@ ip address/<name of file you want to be dipslayed>
 
 
 ___________
-*Section 7*
+__*Section 7*__
 
 Next, we need to install MySQL so that we can type commands and add users later on in the database.
  
@@ -148,7 +148,7 @@ To check that MySQL is working, you can go to section 10 and download the github
 database.
  
 ___________
-*Section 8*
+__*Section 8*__
 
 You need to have your server running in order to connect to any php or html files you have saved 
 on your machine in the /var/www/html file. You don't need to save everything in this directory in 
@@ -163,11 +163,11 @@ If your file is in another folder that isn't specified in the /var/www/html dire
 the directory name before the file with a / and this should work then. 
 
 ___________
-*Section 9*
+__Section 9*__
 
 
 ___________
-*Section 10*
+__*Section 10*__
  
 Test any php file or html file if it's working by typing 
 ```
