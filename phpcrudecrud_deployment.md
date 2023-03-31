@@ -54,6 +54,7 @@ Once the software is installed, you can add a virtual machine to begin creating 
 Once you ssh into your virtual machine using the terminal, type these following commands to set up the configuration.
 
 sudo apt update
+
 sudo apt upgrade
 
 ___________
@@ -84,7 +85,9 @@ type sudo nano testphp.php.
 Add these lines to the file:
 
 <?php>
+
 phpinfo()
+
 <php?>
 
 Now, move this file to the /var/www/html folder with this command: sudo mv testphp.php /var/www/html.
