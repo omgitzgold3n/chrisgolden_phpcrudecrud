@@ -62,9 +62,9 @@ ___________
 Section 6:
 
 Then type this command to install Apache 2:
-
+```
 sudo apt install apache2
-
+```
 This will create the /var/www/html directory, which you can navigate to and edit.
 
 Now we need to install PHP.
@@ -102,7 +102,15 @@ ip address/<name of file you want to be dipslayed>
 ___________
 Section 7:
 
-
+Next, we need to install MySQL so that we can type commands and add users later on in the database.
+ 
+```
+sudo apt update
+sudo apt upgrade 
+sudo apt install mariadb-server
+sudo systemctl status mariadb
+mysql -V
+```
 ___________
 Section 8:
 
