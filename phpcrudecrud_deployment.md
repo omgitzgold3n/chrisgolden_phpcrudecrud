@@ -10,6 +10,15 @@ that can be stored and viewed in the MySQL database or displayed as an HTML tabl
 ___________
 Section 2:
 
+The PHP Crude Crud Deployment involves several steps to set up and configure so that you are able 
+to create functional websites that can be accessed on your machine via a virutal machine server. 
+You will need to install Oracle's VirtualBox from their website for whatever device you are using, 
+and then you will need to create virtual machines that are local servers on your machine. After the 
+VirtualBox is installed, and you've created virtual machine servers, you can begin installing Apache
+and PHP so that you can create php and html files that can be displayed in a browser. Once files are 
+created and stored on the /var/www/html directory on your local server, you can deploy your PHP Crude
+Crud Application using it's ip address and file location on the server in your web browser. 
+
 ___________
 Section 3:
 
@@ -53,32 +62,27 @@ Once the software is installed, you can add a virtual machine to begin creating 
 
 Once you ssh into your virtual machine using the terminal, type these following commands to set up the configuration.
 ```
-sudo apt update
-```
-```
-sudo apt upgrade
+$sudo apt update
+$sudo apt upgrade
 ```
 ___________
 Section 6:
 
-Then type this command to install Apache 2:
+Now we need to set up Apache so that we can run functioning websites. 
+Type this command to install Apache 2:
 ```
-sudo apt install apache2
+$sudo apt install apache2
 ```
 This will create the /var/www/html directory, which you can navigate to and edit.
 
 Now we need to install PHP.
 Type these commands seperately in the terminal. 
 ```
-sudo apt install php
-
-sudo apt install libapache2-mod-php
-
-sudo apt install php-cli
-
-sudo apt install php-mysql
-
-sudo apt install php-pgsql
+$sudo apt install php
+$sudo apt install libapache2-mod-php
+$sudo apt install php-cli
+$sudo apt install php-mysql
+$sudo apt install php-pgsql
 ```
 Restart the server.
 Once back in, create/edit a php file to test that Apache and PHP are working. 
@@ -105,15 +109,54 @@ Section 7:
 Next, we need to install MySQL so that we can type commands and add users later on in the database.
  
 ```
-sudo apt update
-sudo apt upgrade 
-sudo apt install mariadb-server
-sudo systemctl status mariadb
-mysql -V
+$ sudo apt update
+$ sudo apt upgrade 
+$ sudo apt install mariadb-server
+$ sudo systemctl status mariadb
+$ mysql -V
 ```
+You will see this output after the mysql -V command:
+```
+$ mysql  Ver 15.1 Distrib 10.3.38-MariaDB, for debian-linux-gnu (x86_64) using readline 5.2
+```
+Next, type this command to secure your MySQL installation:
+```
+$ sudo mysql_secure_installation
+```
+You will recieve a long output, this means everything worked. Now it's time to restart mariaDB.
+```
+$ systemctl restart mariadb
+```
+Create a user on MySQL by doing the following command:
+```
+$ sudo mysql
+```
+Then, once you're in mariaDB, type this command and type in your username and password that you will use
+everytime you use mariaDB.
+```
+MariaDB [(none)]> create user '<your username>'@'localhost' identified by 'your password';
+MariaDB [(none)]> grant all privileges on *.* to '<your username>'@'localhost';
+MariaDB [(none)]> flush privileges;
+
+```
+Make sure you always use a semilcolon ";" at the end of each line. When you want to quit, type control Z.
+
+To check that MySQL is working, you can go to section 10 and download the github repository with a 
+database.
 ___________
 Section 8:
 
+You need to have your server running in order to connect to any php or html files you have saved 
+on your machine in the /var/www/html file. You don't need to save everything in this directory in 
+order to run a php or html file, though it's nice to have everything saved and stored in a 
+directory. To run a php or html file, type:
+ 
+```
+http://<your_server_ip>/<thefilename>
+```
+ 
+If your file is in another folder that isn't specified in the /var/www/html directory, you will need to add
+the directory name before the file with a / and this should work then. 
 
 ___________
 Section 9:
@@ -121,3 +164,20 @@ Section 9:
 
 ___________
 Section 10:
+ 
+Test any php file or html file if it's working by typing 
+```
+http://<your_server_ip>/<thefilename>
+```
+in the browser.
+If the conneciton doesn't work, then your file may not be in the right directory. Also make sure you ip address is typed correctly. 
+
+To test if you correctly installed MySQL and PHP, you can clone this git hub repository with a database created.
+```
+$ git clone https://github.com/datacharmer/test_db.git
+```
+Now, open up mariaDB:
+```
+$ mysql -u <yourusername> -p
+```
+Now you can run MySQL commands to look at the databases, and select employees and do multiple commands to see how the database works.
