@@ -84,14 +84,16 @@ Once back in, create/edit a php file to test that Apache and PHP are working.
 type sudo nano testphp.php.
 Add these lines to the file:
 
+'
 <?php>
 
 phpinfo()
 
 <php?>
+'
 
 Now, move this file to the /var/www/html folder with this command: sudo mv testphp.php /var/www/html.
-Then go to your browser and type http://<your server ip address>/testphp.php. 
+Then go to your browser and type http://(your server ip address)/testphp.php. 
 If this shows a page with "PHP Version 7.4.3...." then everything is working and was installed correctly. 
 
 By creating html or php files and moving them into the /var/www/html directory, you can display the web pages by using your servers
