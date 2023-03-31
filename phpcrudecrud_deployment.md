@@ -23,9 +23,9 @@ ___________
 Section 3:
 
 Specifications for Virtual Machine:
-- - - - - - - - - - - - - - - - - -
+```
 Disk: 20GB	| CPU: 1  |	RAM: 2048
-- - - - - - - - - - - - - - - - - -
+```
 ___________
 Section 4:
 
