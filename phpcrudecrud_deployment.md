@@ -1,5 +1,5 @@
 ___________
-__*Section 1*__
+__*Section 1 - PHP Crude Crud Application*__
 
 The purpose of the PHP Crude CRUD Application was for us to understand and work with dynamic 
 data-driven web applications. The application creates a LAMP server right on our local machine, 
@@ -9,7 +9,7 @@ may be looking for when searching for employees, as well as add new employees to
 that can be stored and viewed in the MySQL database or displayed as an HTML table. 
 
 ___________
-__*Section 2*__
+__*Section 2 - Deployment Overview*__
 
 The PHP Crude Crud Deployment involves several steps to set up and configure so that you are able 
 to create functional websites that can be accessed on your machine via a virutal machine server. 
@@ -30,7 +30,7 @@ Disk: 20GB	| CPU: 1  |	RAM: 2048
 ```
 
 ___________
-__*Section 4*__
+__*Section 4 Create a Virutal Machine*__
 
 How to Create a VirtualBox Virtual Machine
 If you haven’t already installed the Ubuntu 20.04 Operating System on your machine, 
@@ -53,7 +53,7 @@ as it will allow you to connect to this server via ssh. Otherwise, you wouldn't 
 
 Once finished, restart the server and it should prop up a log in and password, then you can begin to use the server. Use a seperate terminal to ssh into your server with it's ip. Using the server and typing "ip addr" will show you the enp0s8 with an ip address. Use this to ssh into the server.
 ___________
-__*Section 5*__
+__*Section 5 - Install Ubuntu 20.04 OS*__
 
 Installing the Ubuntu 20.04 Operating System 
 Navigate to [Oracle VM VirtualBox](https://www.virtualbox.org/) and download the
@@ -69,7 +69,7 @@ $sudo apt update
 $sudo apt upgrade
 ```
 ___________
-__*Section 6*__
+__*Section 6 - Install Apache 2 and PHP*__
 
 Now we need to set up Apache so that we can run functioning websites. 
 Type this command to install Apache 2:
@@ -107,7 +107,7 @@ ip address/<name of file you want to be dipslayed>
 
 
 ___________
-__*Section 7*__
+__*Section 7 - Install MySQL*__
 
 Next, we need to install MySQL so that we can type commands and add users later on in the database.
  
@@ -148,7 +148,7 @@ To check that MySQL is working, you can go to section 10 and download the github
 database.
  
 ___________
-__*Section 8*__
+__*Section 8 - Configuration Information for PHP credentials needed to connect to database*__
 
 You need to have your server running in order to connect to any php or html files you have saved 
 on your machine in the /var/www/html file. You don't need to save everything in this directory in 
@@ -163,11 +163,11 @@ If your file is in another folder that isn't specified in the /var/www/html dire
 the directory name before the file with a / and this should work then. 
 
 ___________
-__Section 9*__
+__*Section 9 - Deploy PHP Crude Crud Application*__
 
 
 ___________
-__*Section 10*__
+__*Section 10 - Suggested Tests*__
  
 Test any php file or html file if it's working by typing 
 ```
