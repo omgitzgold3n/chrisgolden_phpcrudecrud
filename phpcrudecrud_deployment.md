@@ -1,5 +1,5 @@
 ___________
-**Section 1**
+__*Section 1*__
 
 The purpose of the PHP Crude CRUD Application was for us to understand and work with dynamic 
 data-driven web applications. The application creates a LAMP server right on our local machine, 
