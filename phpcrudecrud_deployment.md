@@ -52,8 +52,9 @@ When it the file finishes downloading, run the file.
 Once the software is installed, you can add a virtual machine to begin creating local servers. 
 
 Once you ssh into your virtual machine using the terminal, type these following commands to set up the configuration.
-
+```
 sudo apt update
+```
 
 sudo apt upgrade
 
