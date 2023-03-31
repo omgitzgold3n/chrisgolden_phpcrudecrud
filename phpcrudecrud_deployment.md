@@ -84,13 +84,13 @@ Once back in, create/edit a php file to test that Apache and PHP are working.
 type sudo nano testphp.php.
 Add these lines to the file:
 
-'
+
 <?php>
 
 phpinfo()
 
 <php?>
-'
+
 
 Now, move this file to the /var/www/html folder with this command: sudo mv testphp.php /var/www/html.
 Then go to your browser and type http://(your server ip address)/testphp.php. 
