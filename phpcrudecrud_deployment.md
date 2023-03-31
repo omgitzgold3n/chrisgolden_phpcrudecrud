@@ -55,9 +55,9 @@ Once you ssh into your virtual machine using the terminal, type these following 
 ```
 sudo apt update
 ```
-
+```
 sudo apt upgrade
-
+```
 ___________
 Section 6:
 
@@ -69,7 +69,7 @@ This will create the /var/www/html directory, which you can navigate to and edit
 
 Now we need to install PHP.
 Type these commands seperately in the terminal. 
-
+```
 sudo apt install php
 
 sudo apt install libapache2-mod-php
@@ -79,19 +79,17 @@ sudo apt install php-cli
 sudo apt install php-mysql
 
 sudo apt install php-pgsql
-
+```
 Restart the server.
 Once back in, create/edit a php file to test that Apache and PHP are working. 
 type sudo nano testphp.php.
 Add these lines to the file:
 
-
+```
 <?php>
-
 phpinfo()
-
 <php?>
-
+```
 
 Now, move this file to the /var/www/html folder with this command: sudo mv testphp.php /var/www/html.
 Then go to your browser and type http://(your server ip address)/testphp.php. 
